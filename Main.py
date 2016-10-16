@@ -6,7 +6,6 @@ from Model import FactoryObj
 import thread
 import jinja2
 import logging
-import re
 
 logging.basicConfig(filename='output.log',level=logging.INFO)
 
@@ -15,9 +14,11 @@ logging.basicConfig(filename='output.log',level=logging.INFO)
 parser = argparse.ArgumentParser('Monitor servers')
 parser.add_argument('timeinterval', type=int, nargs='?', help='time interval to make http calls')
 args = parser.parse_args()
+
 # parse yaml file
-with open('Config.yml', 'r') as ymlfile:
+with open('config.yml', 'r') as ymlfile:
     cfg = yaml.load(ymlfile)
+
 # set timeout interval
 timeinterval = args.timeinterval
 if timeinterval == None:

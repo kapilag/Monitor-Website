@@ -14,8 +14,6 @@ class FactoryObj:
 
 
 class URLMeta:
-    def getStatus(self):
-        return self.status_code
 
     def setStatusResult(self,result):
         self.prev_status_cond = self.status_cond
