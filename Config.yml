@@ -1,0 +1,11 @@
+urls:
+ - path: https://www.google.com
+   match: Google Search
+
+ - path: https://www.facebook.com
+   match: //*[@name=q]
+
+ - path: https://www.twitter.com
+   match: twitter
+
+timeinterval: 10

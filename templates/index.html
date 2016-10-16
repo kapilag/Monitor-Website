@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Monitor URL</title>
+  </head>
+  <body>
+    <h1>Monitor Websites!</h1>
+    <!-- <h2>Data for {{url}}<h2> -->
+    {% for data in navigation %}
+       <h2> Data for url:{{data.items()[0][0]}}
+       <h3>is Up?"{{data.items()[0][1].getCurrentStatusResult()}}"</h3>
+    {% endfor %}
+  </body>
+  </html>
