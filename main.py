@@ -2,7 +2,7 @@ import yaml
 import argparse
 import urllib2
 import time
-from Model import FactoryObj
+from model import FactoryObj
 import thread
 import jinja2
 import logging
