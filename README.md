@@ -7,3 +7,5 @@ Simple website monitoring service implemented in python 2.7
 ## TO DO
 * Comlete Flask server implementation to serve Jinja templates
 * Loads of code cleanup/naming convention
+* Unit test cases
+* Proper packaging.
